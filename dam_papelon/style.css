@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+/*
+https://www.funpapelariadivertida.com.br/papelaria-online
+https://www.kalunga.com.br/
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -15,17 +20,22 @@
 }
 
 .store-navbar {
-  background-color: #333;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
+  background-color: #f2357b;
+  color: #f2dce0;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .store-navbar ul {
-  list-style: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .store-navbar li {
@@ -33,20 +43,31 @@
 }
 
 .store-navbar li a {
-  color: white;
+  color: #f2dce0;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 .store-navbar li a:hover {
-  background-color: #111;
+  background-color: #f2a2b1;
 }
 
-.store-navbar li.active {
-  background-color: #4CAF50;
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px 50px 50px 0;
 }
 
-.store-navbar li.active a {
-  color: white;
+.search-bar input[type='text'] {
+  padding: 5px;
+  font-size: 15px;
+}
+
+.header a.carrinho {
+  background-color: #f2d8c9;
+  color: #637371;
+  border-radius: 4px;
+  padding: 10px 15px;
 }
