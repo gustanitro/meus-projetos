@@ -5,11 +5,7 @@ https://www.funpapelariadivertida.com.br/papelaria-online
 https://www.kalunga.com.br/
 */
 
-* {
-  margin: 0;
-  padding: 0;
-  outline: 0;
-}
+* {margin: 0;padding: 0;outline: 0;}
 
 :root {
   --cinza: #637371;
@@ -19,55 +15,75 @@ https://www.kalunga.com.br/
   --rosa4: #f2dce0;
 }
 
-.store-navbar {
-  background-color: #f2357b;
-  color: #f2dce0;
-  padding: 20px;
-  position: fixed;
-  top: 0;
-  left: 0;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+.menu {
+  background-color: #f2dce096;
   width: 100%;
+  list-style: none;
+  float: left;
 }
 
-.store-navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.store-navbar li {
+.menu li {
+  position: relative; /*poder colocar submenu*/
   display: inline-block;
+  float: left;
+  border-right:1px solid #c0c0c0;
 }
 
-.store-navbar li a {
-  color: #f2dce0;
+.menu li  ul{
+  position:absolute; /*submenu n interfere no menu*/
+  top:25px;
+  left:0;
+  background-color: #f2dce096;
+  display:none; /*esconder submenu*/
+  }
+
+.menu li a {
+  color: var(--rosa1);
+  text-decoration:none; 
+  padding:5px 10px; 
+  display:block;
+}
+
+.menu li a:hover{
+background: var(--rosa3);
+color: var(--rosa1);
+-moz-box-shadow:0 3px 10px 0 #CCC;
+-webkit-box-shadow:0 3px 10px 0 #ccc;
+text-shadow:0px 0px 5px #fff;
+}
+
+.menu li:hover ul, .menu li.over ul{display:block;}
+
+.menu li ul li{
+  border:1px solid #c0c0c0;
+  display:block;
+  width:150px;
+  }
+
+.pesquisar input {
+  padding: 5px 10px;
+  display: block;
+}
+
+.novidades {
+  background: black url(imagens/papelaria.avif) center center no-repeat fixed;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
+
+.novidades h1 {
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.store-navbar li a:hover {
-  background-color: #f2a2b1;
-}
-
-.search-bar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50px 50px 50px 0;
-}
-
-.search-bar input[type='text'] {
-  padding: 5px;
-  font-size: 15px;
-}
-
-.header a.carrinho {
-  background-color: #f2d8c9;
+  padding-top: 25%;
   color: #637371;
-  border-radius: 4px;
-  padding: 10px 15px;
+  text-shadow: black;
+}
+
+.novidades p {
+  text-align: center;
 }
