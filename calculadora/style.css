@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+div {
+  text-align: center;
+}
+
+div#calculadora {
+  width: 300px;
+  height: 400px;
+  position: absolute; /* permite posicionar a <div> de acordo com coordenadas especificas*/
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%); /*desloca a <div> de volta para cima e para a esquerda em metade de sua largura e altura, efetivamente centralizando-a tanto horizontalmente quanto verticalmente.*/
+  border: 1px ridge black;
+}
+
+input {
+  width: 250px;
+  height: 30px;
+  margin: 10px;
+  text-align: right;
+}
+
+/*
+div#botoes {
+  width: 500px;
+}
+*/
+
+button {
+  width: 50px;
+  height: 30px;
+  margin: 4px;
+  font-size: 17px;
+
+  /*
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Cria duas colunas 
+  gap: 5px; /* Espaço entre os botões */
+}
