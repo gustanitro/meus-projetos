@@ -11,24 +11,33 @@
   <h1>Calculadora</h1>
   <div id="calculadora">
     <input type="text" id="display">
-    <div class="botoes">
-      <button click="mostra('7')">7</button>
-      <button click="mostra('8')">8</button>
-      <button click="mostra('9')">9</button>
-      <button click="dividir()">/</button>
-      <button click="mostra('4')">4</button>
-      <button click="mostra('5')">5</button>
-      <button click="mostra('6')">6</button>
-      <button click="multiplicar()">*</button>
-      <button click="mostra('1')">1</button>
-      <button click="mostra('2')">2</button>
-      <button click="mostra('3')">3</button>
-      <button click="mostra('0')">0</button>
-      <button click="calcular()">=</button>
-      <button click="somar()">+</button>
-      <button click="diminuir()">-</button>
-      <button click="LimpaDisplay">C</button>
-    </div>
+    <table class="grid-botoes">
+      <tr>
+          <td><button onclick="mostra('7')">7</button></td>
+          <td><button onclick="mostra('8')">8</button></td>
+          <td><button onclick="mostra('9')">9</button></td>
+          <td><button onclick="mostra('/')">/</button></td>
+      </tr>
+      <tr>
+          <td><button onclick="mostra('4')">4</button></td>
+          <td><button onclick="mostra('5')">5</button></td>
+          <td><button onclick="mostra('6')">6</button></td>
+          <td><button onclick="mostra('*')">x</button></td>
+      </tr>
+      <tr>
+          <td><button onclick="mostra('1')">1</button></td>
+          <td><button onclick="mostra('2')">2</button></td>
+          <td><button onclick="mostra('3')">3</button></td>
+          <td><button onclick="mostra('-')">-</button></td>
+      </tr>
+      <tr>
+          <td><button onclick="mostra('0')">0</button></td>
+          <td><button onclick="mostra('.')">.</button></td>
+          <td><button onclick="LimpaDisplay()">C</button></td>
+          <td><button onclick="mostra('+')">+</button></td>
+      </tr>
+  </table>
+  <button onclick="calcular()">=</button>
   </div>
 
   <script src="script.js"></script>

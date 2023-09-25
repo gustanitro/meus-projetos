@@ -1,5 +1,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(107, 143, 241);
 }
 
 h1 {
@@ -18,6 +19,9 @@ div#calculadora {
   left: 50%;
   transform: translate(-50%, -50%); /*desloca a <div> de volta para cima e para a esquerda em metade de sua largura e altura, efetivamente centralizando-a tanto horizontalmente quanto verticalmente.*/
   border: 1px ridge black;
+  background-color: gray;
+  box-shadow: 0px 0px 5px black;
+
 }
 
 input {
@@ -25,8 +29,31 @@ input {
   height: 30px;
   margin: 10px;
   text-align: right;
+  font-size: 18px;
 }
 
+.grid-botoes {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.grid-botoes td {
+  text-align: center;
+  padding: 5px;
+}
+
+.grid-botoes button {
+  width: 40px;
+  height: 40px;
+  margin: 4px;
+  font-size: 18px;
+  border: 1px ridge black;
+}
+
+.grid-botoes button:hover {
+  background-color: grey;
+  color: white;
+}
 /*
 div#botoes {
   width: 500px;
@@ -34,10 +61,10 @@ div#botoes {
 */
 
 button {
-  width: 50px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   margin: 4px;
-  font-size: 17px;
+  font-size: 18px;
 
   /*
   display: grid;
