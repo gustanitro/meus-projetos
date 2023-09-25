@@ -26,10 +26,12 @@ div#calculadora {
 
 input {
   width: 250px;
-  height: 30px;
+  height: 50px;
   margin: 10px;
   text-align: right;
   font-size: 18px;
+  border: 1px ridge black;
+  border-radius: 5px;
 }
 
 .grid-botoes {
@@ -42,32 +44,16 @@ input {
   padding: 5px;
 }
 
-.grid-botoes button {
+.grid-botoes button, button {
   width: 40px;
   height: 40px;
   margin: 4px;
   font-size: 18px;
   border: 1px ridge black;
+  border-radius: 5px;
 }
 
-.grid-botoes button:hover {
+.grid-botoes button:hover, button:hover {
   background-color: grey;
   color: white;
-}
-/*
-div#botoes {
-  width: 500px;
-}
-*/
-
-button {
-  width: 40px;
-  height: 40px;
-  margin: 4px;
-  font-size: 18px;
-
-  /*
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Cria duas colunas 
-  gap: 5px; /* Espaço entre os botões */
 }
